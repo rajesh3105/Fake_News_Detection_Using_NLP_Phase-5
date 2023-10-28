@@ -1,0 +1,6 @@
+wordcloud = WordCloud(width=800, height=400).generate(total_fake_news)
+plt.figure(figsize=(10, 5))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')
+plt.title('Word Cloud for Fake News')
+plt.show()
